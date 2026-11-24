@@ -1,0 +1,30 @@
+{
+  "skill": "music-to-atmosphere-video",
+  "example_only": true,
+  "audio_id": "example-song.wav",
+  "audio_duration": 90,
+  "audio_in": 10,
+  "audio_out": 30,
+  "output_duration": 20,
+  "audio_rate": 1,
+  "lyrics_status": "none",
+  "lyric_cues": [],
+  "shots": [
+    {
+      "start": 0,
+      "end": 10,
+      "visual_anchor": "same character / rain / blue coat"
+    },
+    {
+      "start": 10,
+      "end": 20,
+      "visual_anchor": "same character / rain / blue coat"
+    }
+  ],
+  "beats": [
+    0,
+    5,
+    10,
+    15
+  ]
+}

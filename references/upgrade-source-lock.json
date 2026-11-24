@@ -1,0 +1,163 @@
+{
+  "date": "2026-11-24",
+  "skill": "music-to-atmosphere-video",
+  "version": "2.0",
+  "baseline_commit": "866fcfaa0b1891876970df1d616fa4737fbe7aed",
+  "owns": "以用户原曲为主时钟，将音乐结构、歌词/意象与连续视觉组织为氛围短片；支持纯器乐。",
+  "does_not_own": "不替换原曲，不制作攻略/影视解说/实况集锦，不默认转数字人唱歌。",
+  "admission_rule": "音乐节奏/特征分析或时序视觉生成的开源项目；合成新歌、音乐播放器与通用聊天平台不作为当前任务替代。",
+  "ranking_scope": "GitHub Repository Search（每查询按stars降序取前50项）+ 定向核查知名相关项目；按本技能职责与许可/维护状态筛选后，在本次候选池内按实际stars排序取五项。不是对全GitHub的穷尽排名，也不是文学/视觉/视频质量排行榜。",
+  "queries": [
+    {
+      "q": "music video generation",
+      "total_count": 611,
+      "incomplete_results": false,
+      "fetched_items": 50
+    },
+    {
+      "q": "audio music analysis",
+      "total_count": 1337,
+      "incomplete_results": false,
+      "fetched_items": 50
+    }
+  ],
+  "targeted_candidates": [
+    "guoyww/AnimateDiff",
+    "AudioKit/AudioKit",
+    "librosa/librosa",
+    "MTG/essentia",
+    "aubio/aubio"
+  ],
+  "sources": [
+    {
+      "rank_in_admitted_candidates": 1,
+      "repository": "guoyww/AnimateDiff",
+      "url": "https://github.com/guoyww/AnimateDiff",
+      "stars_snapshot": 12302,
+      "commit": "e92bd5671ba62c0d774a32951453e328018b7c5b",
+      "license": "Apache-2.0",
+      "archived": false,
+      "source_kind": "project or supporting component; not a complete replacement for this skill",
+      "review_scope": "Root README and LICENSE, relevant topical sections; public descriptions treated as capability claims, not performance evidence. No external code executed.",
+      "retrieved_materials": [
+        {
+          "path": "README.md",
+          "sha256": "434a02cd21653365f24ab45aa46f0c58bf7bf9ce25d435913bf7ad5f71e21692",
+          "bytes": 19371
+        },
+        {
+          "path": "LICENSE.txt",
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+          "bytes": 11357
+        }
+      ],
+      "focus": "视觉时间连续性",
+      "adapted_for_this_skill": "镜头间延续人物/服装/光线，模型兼容与权重边界需确认，不默认强装模型"
+    },
+    {
+      "rank_in_admitted_candidates": 2,
+      "repository": "AudioKit/AudioKit",
+      "url": "https://github.com/AudioKit/AudioKit",
+      "stars_snapshot": 11509,
+      "commit": "c358c15fdcdd0e78c4b4988f5c532c7cfb5c2eeb",
+      "license": "MIT",
+      "archived": false,
+      "source_kind": "project or supporting component; not a complete replacement for this skill",
+      "review_scope": "Root README and LICENSE, relevant topical sections; public descriptions treated as capability claims, not performance evidence. No external code executed.",
+      "retrieved_materials": [
+        {
+          "path": "README.md",
+          "sha256": "0c9a7fa50dcafd5b9928962ca7e3a72c688d706194bfe33960ad5f109e0f2989",
+          "bytes": 2119
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "b9aad96b49e7afcadb3f351b733de24577924b3ba48c82a3e07393d8b9f96c5e",
+          "bytes": 1085
+        }
+      ],
+      "focus": "音频处理与平台边界",
+      "adapted_for_this_skill": "保留原曲采样/声道与时序；不因组件面向Apple平台而要求改宿主"
+    },
+    {
+      "rank_in_admitted_candidates": 3,
+      "repository": "librosa/librosa",
+      "url": "https://github.com/librosa/librosa",
+      "stars_snapshot": 9149,
+      "commit": "087a8607dd86e98a9032a62b357eb9afd23a14c5",
+      "license": "ISC",
+      "archived": false,
+      "source_kind": "project or supporting component; not a complete replacement for this skill",
+      "review_scope": "Root README and LICENSE, relevant topical sections; public descriptions treated as capability claims, not performance evidence. No external code executed.",
+      "retrieved_materials": [
+        {
+          "path": "README.md",
+          "sha256": "5887811bcf8720e315cebfcc7ebe62637cc284bf005077dc1a0340a8b97e3b36",
+          "bytes": 3905
+        },
+        {
+          "path": "LICENSE.md",
+          "sha256": "79aa4a8086d51ac89f9a7322f546670cdef73e758c67f04587b7af8afafd6df8",
+          "bytes": 766
+        }
+      ],
+      "focus": "节拍与音乐信号分析",
+      "adapted_for_this_skill": "区分BPM、拍点、段落和能量；半拍/倍拍候选回听核定"
+    },
+    {
+      "rank_in_admitted_candidates": 4,
+      "repository": "MTG/essentia",
+      "url": "https://github.com/MTG/essentia",
+      "stars_snapshot": 3817,
+      "commit": "df27f949d7827a43b4afc216fd5c788454b0f8a4",
+      "license": "AGPL-3.0",
+      "archived": false,
+      "source_kind": "project or supporting component; not a complete replacement for this skill",
+      "review_scope": "Root README and LICENSE, relevant topical sections; public descriptions treated as capability claims, not performance evidence. No external code executed.",
+      "retrieved_materials": [
+        {
+          "path": "README.md",
+          "sha256": "39f559194a4f6055a5daeb34699033216e86771ff55563b033953df932c9d420",
+          "bytes": 4251
+        },
+        {
+          "path": "COPYING.txt",
+          "sha256": "857d4e8afe59718161905db0295c7e09d00674e0be844c2a0500465afbe06521",
+          "bytes": 31773
+        }
+      ],
+      "focus": "音乐特征及分段依据",
+      "adapted_for_this_skill": "将可测信号和主观情绪分开，段落边界人工回听"
+    },
+    {
+      "rank_in_admitted_candidates": 5,
+      "repository": "aubio/aubio",
+      "url": "https://github.com/aubio/aubio",
+      "stars_snapshot": 3792,
+      "commit": "ad5cf975aed08cc4562dd008cf9f83b12b82ffb8",
+      "license": "GPL-3.0",
+      "archived": false,
+      "source_kind": "project or supporting component; not a complete replacement for this skill",
+      "review_scope": "Root README and LICENSE, relevant topical sections; public descriptions treated as capability claims, not performance evidence. No external code executed.",
+      "retrieved_materials": [
+        {
+          "path": "README.md",
+          "sha256": "189612405e3e720f1dfb799bf3e3ff2e57fa706316f9bae05c735c081128a5a7",
+          "bytes": 4353
+        },
+        {
+          "path": "COPYING",
+          "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903",
+          "bytes": 35147
+        }
+      ],
+      "focus": "起音与节拍位置",
+      "adapted_for_this_skill": "节拍只是可选剪点，不能每拍必切或据BPM直接判情绪"
+    }
+  ],
+  "excluded_or_not_top_five": [
+    "通用模型服务平台、播放器和新歌生成不等于原曲驱动短片；不借源项目更换用户原曲。",
+    "audioFlux（3,386 stars）和Deforum（2,280 stars）为较低星补充候选，未挤入已筛选五项。"
+  ],
+  "reuse_policy": "Only independently restated methods and project capability boundaries are integrated. No upstream code, templates, models or weights are vendored; no model installation, API call, commercial service or content publication is performed by this research."
+}
